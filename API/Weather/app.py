@@ -9,9 +9,6 @@ country = 'US'
 
 res = requests.get(f'http://api.openweathermap.org/data/2.5/weather?q={city},{state},{country}&appid={api_key}&units=imperial')
 data = res.json()
-# print(data['weather'][0]['main'])
-# print(data['main']['temp'])
-# print(data['wind']['speed'])
 
 weather = data['weather'][0]['main']
 temp = data['main']['temp']

@@ -21,14 +21,14 @@ class City:
         unit_symbol = "C"
         if self.units == "imperial":
             unit_symbol = "F"
-            print(f"In {self.city} it is: {self.temp} degrees {unit_symbol} ")
-            print(f"Today's High: {self.temp_max} degrees {unit_symbol} ")
-            print(f"Today's Low: {self.temp_min} degrees {unit_symbol} ")
+        print(f"In {self.city} it is: {self.temp} degrees {unit_symbol} ")
+        print(f"Today's High: {self.temp_max} degrees {unit_symbol} ")
+        print(f"Today's Low: {self.temp_min} degrees {unit_symbol} ")
 
 
 # my_city = City("Tokyo", "35.69", "139.69", "metric")
 # my_city.print_weather()
 
-vacation_city = City("Portland", "45.5152", "-122.6784", "imperial")
+vacation_city = City("Portland", "45.5152", "-122.6784", units="imperial")
 vacation_city.print_weather()
 
